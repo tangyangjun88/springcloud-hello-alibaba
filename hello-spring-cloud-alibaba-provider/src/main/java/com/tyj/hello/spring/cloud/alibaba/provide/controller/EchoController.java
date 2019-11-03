@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class EchoController {
     @Value("${server.port}")
-    private int port;
+    private int port=8848;
 
     @GetMapping("/echo/{msg}")
     public String echo(@PathVariable("msg") String msg){
